@@ -1,0 +1,32 @@
+name: TeleportOnPoint
+version: '1.0-SNAPSHOT'
+main: com.kray.teleportplugin.TeleportOnPoint
+api-version: '1.21'
+author: 'kray'
+description: 'Плагин для телепортации игроков по заданным точкам'
+commands:
+  tpreload:
+    description: 'Перезагрузить конфиг и сообщения'
+    usage: '/tpreload'
+    permission: teleportonpoint.admin
+  tpadd:
+    description: 'Добавить текущую точку в список телепортации'
+    usage: '/tpadd'
+    permission: teleportonpoint.admin
+  tptoggle:
+    description: 'Включить или выключить автоматическую телепортацию'
+    usage: '/tptoggle'
+    permission: teleportonpoint.admin
+  tptime:
+    description: 'Изменить интервал телепортации'
+    usage: '/tptime <секунды>'
+    permission: teleportonpoint.admin
+  tpclear:
+    description: 'Очистить список точек телепортации'
+    usage: '/tpclear'
+    permission: teleportonpoint.admin
+
+permissions:
+  teleportonpoint.admin:
+    description: 'Позволяет управлять телепортацией'
+    default: op
